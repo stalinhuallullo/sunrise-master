@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x", "linux-musl"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Historial {
+  id               Int          @id @default(autoincrement())
+  filename         String?      @db.VarChar(255)
+  filenameOrigin   String?      @db.VarChar(255)
+  groupName        String?      @db.VarChar(50)   
+  userName         String?      @db.VarChar(50)   
+  userId           String?      @db.VarChar(50)     
+  groupId          String?      @db.VarChar(50)
+  dateCreated      DateTime
+  status           String       @db.VarChar(50)
+  reports          Report[]
+
+  @@map("historials")
+}
+
+model Report {
+  id              Int           @id @default(autoincrement())
+  name            String?       @db.VarChar(255)
+  email           String?       @db.VarChar(255)
+  description     String?       @db.Text
+  historial       Historial     @relation(fields: [historialId], references: [id])
+  historialId     Int
+
+  @@map("reports")
+}

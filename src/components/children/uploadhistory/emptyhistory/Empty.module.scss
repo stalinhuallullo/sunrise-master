@@ -1,0 +1,21 @@
+.s-icon-empty-history > svg > path {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.s-empty-history {
+  margin-top: 40px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-empty-history > p {
+  font-size: 22px;
+  font-family: proxima Nova;
+  line-height: 32px;
+  text-align: center;
+}

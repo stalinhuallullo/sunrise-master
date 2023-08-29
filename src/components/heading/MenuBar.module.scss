@@ -1,0 +1,85 @@
+.navbar-container {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-containericon {
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .s-helpside {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    align-items: center;
+  }
+
+  .s-texttitleneedhelp {
+    font-size: calc(10px + 0.8vw);
+  }
+
+  .s-textparagraphhelp {
+    text-align: center;
+    margin-top: 5px;
+    font-size: calc(9px + 0.8vw);
+  }
+
+  .s-menulistgroup,
+  .s-listgroup {
+    color: #9a9a9a;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
+
+  .s-divisor-menubar {
+    color: #4f5050;
+    margin-top: 15px;
+    font-size: calc(7px + 0.8vw);
+    border-bottom: 1px solid hsl(0deg 0% 35%);
+  }
+
+  .s-sidebargrouplinks {
+    margin-top: 15px;
+  }
+
+  .navbar-container {
+    z-index: 9;
+    display: flex;
+    width: 100%;
+    padding: 15px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .s-menulistgroup > p,
+  .s-listgroup {
+    font-size: calc(10px + 0.8vw);
+    font-family: proxima Nova;
+    font-weight: 800;
+    color: #9a9a9a;
+  }
+
+  .s-menulistgroup > h4:hover {
+    font-size: calc(10px + 0.8vw);
+    font-family: proxima Nova;
+    color: white;
+  }
+
+  .link-menu {
+    padding: 28px;
+    background: #131212;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .s-textclickhere {
+    font-size: calc(12px + 0.8vw);
+  }
+}

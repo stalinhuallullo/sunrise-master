@@ -1,0 +1,9 @@
+.l-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: $gutter;
+
+  @include lg {
+    max-width: $screen-xl-min;
+  }
+}

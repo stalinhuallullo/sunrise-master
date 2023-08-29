@@ -1,0 +1,23 @@
+{
+  "version": 0,
+  "Resources":[
+     {
+        "TargetService":{
+           "Type":"AWS::ECS::Service",
+           "Properties":{
+              "TaskDefinition": "{{REPLACE_TASK}}",
+              "LoadBalancerInfo":{
+                 "ContainerName": "app",
+                 "ContainerPort": 3000
+              },
+              "CapacityProviderStrategy": [
+               {
+                 "CapacityProvider": "FARGATE_SPOT",
+                 "Weight": 100
+               }
+             ]
+           }
+        }
+     }
+  ]
+}

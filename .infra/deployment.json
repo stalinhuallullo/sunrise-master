@@ -1,0 +1,1 @@
+{ "applicationName": "{{applicationName}}", "deploymentGroupName": "{{deploymentGroupName}}", "revision": { "revisionType": "S3", "s3Location": { "bucket": "{{bucket}}", "key": "task.json", "bundleType": "JSON" } } }

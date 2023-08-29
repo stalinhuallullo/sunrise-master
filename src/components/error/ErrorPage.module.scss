@@ -1,0 +1,96 @@
+.s-parent-error-container {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-child-error-container {
+  border-radius: 20px;
+  background: #1f1f1f;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  padding: 42px 42px 24px 42px;
+}
+
+.s-error-title {
+  color: white;
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: calc(12px + 0.3vw);
+}
+
+.s-button-return {
+  display: flex;
+  border: 1px solid #8e8f8e;
+  padding: 10px;
+  width: fit-content;
+  color: #8e8f8e;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-button-return:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 2560px) {
+  .s-child-error-container {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .s-child-error-container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .s-child-error-container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .s-child-error-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .s-child-error-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .s-child-error-container {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .s-child-error-container {
+    height: 150px;
+  }
+
+  .s-child-error-container {
+    width: 90%;
+    padding: 25px 26px 20px 26px;
+  }
+
+  .s-button-return {
+    padding: 10px;
+    width: fit-content;
+  }
+}

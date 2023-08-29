@@ -1,0 +1,29 @@
+// import directories
+@import "./helpers/helpers-dir";
+@import "./base/base-dir";
+
+// Tipography
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap"); // 400
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap"); // 800-italic
+
+@font-face {
+  font-family: proxima Nova;
+  font-weight: regular;
+  src: url("./fonts/Proxima\ Nova\ Regular.otf") format("opentype");
+}
+
+// components
+@import "../components/heading/HeadingUploadMembers.module.scss";
+@import "../components/sidebar/SideBar.module.scss";
+@import "../components/children/boxtodrag/BoxToDrag.module.scss";
+@import "../components/children/boxtodrag/downloadtemplate/DownloadTemplate.module.scss";
+@import "../components/sidebar/listofgroups/ListOfGroups.module.scss";
+@import "../components/children/tablemembers/TableMembers.module.scss";
+@import "../components/children/modals/ModalConfirm.module.scss";
+@import "../components/children/uploadhistory/emptyhistory/Empty.module.scss";
+@import "../components/children/uploadhistory/loadinghistory/Loading.module.scss";
+@import "../components/children/uploadhistory/UploadHistory.module.scss";
+@import "../components/children/modals/ModalInfo.module.scss";
+@import "../components/Layout.module.scss";
+@import "../components/heading/MenuBar.module.scss";
+@import "../components/error/ErrorPage.module.scss";
